@@ -30,13 +30,30 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+From what I can see - the biggest difference between each method is that a foreach() executes an array function once for each element in an array and it can only return that specific array while map() is similar in that it executes a function for each element but it only return a specific property from an array.
+
 2. What is the difference between a function and a method?
+
+While almost everything in JS is a function - the difference between a fuction and a method is the context - where is it being used and how? Generally, a function is a function that can be called directly without referring to an object - while a method is a function inside of an object - making it an object property.
 
 3. What is closure?
 
+simply, closure is the scope of a function inside an object - you could also say it's the scope an object property has within the closed brackets, or closure.
+
 4. Describe the four rules of the 'this' keyword.
 
+1. Window/Global Object Binding - when 'this' is used in Object binding - I would refer to it as the default way to use 'this'. 
+
+2. Implicit Binding - this is the most used principle where 'this' refers to the object that's before the 'dot' and outputs the logic in that object whether it be a function or property - it also depends on how to call that specific object. 
+
+3. New Binding - this is when you create an instance of an Object and inherit everything from that object while also adding a new property it like a new 'name' or 'age'. 
+
+4. Explicit Binding - in this case, you would force a function call for an object to use - and that function will be for 'this' - examples would be .call(), .apply(), .bind()
+
+
 5. Why do we need super() in an extended class?
+
+super() is the key to inheriting the properties of a parent object - its what creates the inheritance - witout it a child object won't have access to its parent objec'ts properties and methods.
 
 ## Project Set up
 
@@ -66,19 +83,19 @@ Your finished project must include all of the following requirements:
 
 ## Task 1: Objects and Arrays
 Test your knowledge of objects and arrays. 
-* [ ] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started.  Read the instructions carefully!
+* [x] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started.  Read the instructions carefully!
 
 ## Task 2: Functions
 This challenge takes a look at callbacks and closures as well as scope. 
-* [ ] Use the [functions.js](challenges/functions.js) link to get started. Read the instructions carefully!
+* [x] Use the [functions.js](challenges/functions.js) link to get started. Read the instructions carefully!
 
 ## Task 3: Prototypes
 Create constructors, bind methods, and create cuboids in this prototypes challenge.
-* [ ] Use the [prototypes.js](challenges/prototypes.js) link to get started. Read the instructions carefully!
+* [x] Use the [prototypes.js](challenges/prototypes.js) link to get started. Read the instructions carefully!
 
 ## Task 4: Classes
 Once you have completed the prototypes challenge, it's time to convert all your hard work into classes.
-* [ ] Use the [classes.js](challenges/classes.js) link to get started. Read the instructions carefully!
+* [x] Use the [classes.js](challenges/classes.js) link to get started. Read the instructions carefully!
 
 In your solutions, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
